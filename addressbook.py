@@ -120,7 +120,7 @@ class AddressBook(UserDict):
 
         raise ValueError("Contact with this value does not exist.")
 
-    def iterator(self, amount_of_records=10):
+    def iterator(self, amount_of_records=5):
         page = []
         counter = 0
         for record in self.data:
