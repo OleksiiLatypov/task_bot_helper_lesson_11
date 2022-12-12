@@ -123,8 +123,8 @@ class AddressBook(UserDict):
     def iterator(self, amount_of_records=10):
         page = []
         counter = 0
-        for record in self.data.values():
-            page.append(record)
+        for record in self.data:
+            page.append(self.data[record])
             counter += 1
 
             if counter == amount_of_records:
